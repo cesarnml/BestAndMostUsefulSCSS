@@ -1,0 +1,24 @@
+{
+  "name": "bestandmostusefulscss",
+  "version": "1.0.0",
+  "description": "Egghead.io tutorial on SCSS",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cesarnml/BestAndMostUsefulSCSS.git"
+  },
+  "author": "Cesar Napoleon Mejia Leiva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cesarnml/BestAndMostUsefulSCSS/issues"
+  },
+  "homepage": "https://github.com/cesarnml/BestAndMostUsefulSCSS#readme"
+}
