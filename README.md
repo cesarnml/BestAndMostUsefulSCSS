@@ -11,6 +11,11 @@
     - [Lesson 03: Importing Partials](#lesson-03-importing-partials)
     - [Lesson 04: Variables for Readability & Maintainability](#lesson-04-variables-for-readability--maintainability)
     - [Lesson 05: Built-In SCSS Functions](#lesson-05-built-in-scss-functions)
+    - [Lesson 06: @mixin](#lesson-06-mixin)
+    - [Lesson 07: @extend](#lesson-07-extend)
+    - [Lesson 08: @for Control Directive](#lesson-08-for-control-directive)
+    - [Lesson 09: @each Control Directive](#lesson-09-each-control-directive)
+    - [Lesson 10: Custom Function @function](#lesson-10-custom-function-function)
 
 <!-- /TOC -->
 
@@ -27,12 +32,12 @@ Egghead.io Course on SCSS by Ari Picker
 - [X] ~~*Lesson 02*~~ [2018-05-21]
 - [X] ~~*Lesson 03*~~ [2018-05-21]
 - [X] ~~*Lesson 04*~~ [2018-05-21]
-- [ ] Lesson 05
-- [ ] Lesson 06
-- [ ] Lesson 07
-- [ ] Lesson 08
-- [ ] Lesson 09
-- [ ] Lesson 10
+- [X] ~~*Lesson 05*~~ [2018-05-21]
+- [X] ~~*Lesson 06*~~ [2018-05-21]
+- [X] ~~*Lesson 07*~~ [2018-05-21]
+- [X] ~~*Lesson 08*~~ [2018-05-21]
+- [X] ~~*Lesson 09*~~ [2018-05-21]
+- [X] ~~*Lesson 10*~~ [2018-05-21]
 
 ### SASS Official Guide
 
@@ -165,3 +170,44 @@ img {
 
 - `lighten($base-color, 20%);`
 - `darken($base-color, 35%);`
+- `mix(color1, color2, 50%);`
+- `complement(color);`
+- [SASS built-in functions](http://sass-lang.com/documentation/Sass/Script/Functions.html)
+
+### Lesson 06: @mixin
+
+- `@mixin` defines a mixin
+
+```SCSS
+@mixin make-character($variable1: defaultValue) {
+property: $variable1;
+}
+```
+
+### Lesson 07: @extend
+
+- Object inheritance in CSS
+- `%` placeholder selector; only used if extended
+- Extends: change the source order, mixins don’t. maintain relationships, mixins don’t. share inherited traits, mixins don’t. can extend multiple classes, mixins don’t. can create multiple class declarations in the compiled CSS, mixins don’t. can use the placeholder selector, mixins don’t.
+- Mixins: can accept arguments, extends don’t. can pass additional content, extends don’t. repeat code when compiled, extends group class names together. work well wIth media queries, extends have a limited interaction wIth media queries.
+
+### Lesson 08: @for Control Directive
+
+- `@for $i from 1 through 10 {
+  $value: .5 * $i;
+}`
+
+### Lesson 09: @each Control Directive
+
+- `@each $hero in wonder-woman, spiderman, batman, superman {
+  .#{$hero}-logo {
+    color: red;
+  }
+}`
+
+### Lesson 10: Custom Function @function
+
+- Custom Functions
+- `@function background($color) {@return $color;}`
+
+_NOTE:_ This tutorial ran way too quick.
